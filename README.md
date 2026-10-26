@@ -1,2 +1,26 @@
-# research-flow-dashboard
-Research progress dashboard with Supabase and Vercel
+# Research Flow
+
+화재·폭발 AI 연구의 분야별 진행 현황과 변경 기록을 관리하는 웹앱입니다.
+
+**배포 주소: https://research-flow-dashboard.vercel.app**
+
+## 기능
+
+- 단락흔·영상·폭발·감정지식 4개 분야 현황
+- 단계별 가중치를 적용한 목표 달성률
+- 진행 상황, 다음 할 일, 체크리스트 저장
+- Markdown 이전 버전 비교 및 변경 기록
+- Supabase 공동 데이터 저장
+- 모바일 화면 대응
+
+## 실행
+
+`index.html`을 브라우저에서 열면 됩니다. 별도 빌드나 패키지 설치가 필요하지 않습니다.
+
+Supabase 연결 및 Vercel 배포 방법은 [SETUP.md](SETUP.md)를 참고하세요. 테이블과 저장 함수는 [supabase.sql](supabase.sql)에 있습니다.
+
+## 시연 데이터
+
+현재 화면은 2027년 10월을 가정한 과제 제출용 예시입니다. 실제 연구 성과가 아닙니다. 분야별 가중 달성률은 94%, 86%, 78%, 82%이며 평균은 85%입니다. 체크리스트에는 단계별 가중치가 표시됩니다.
+
+현재 DB는 공개 시연용으로 누구나 조회·업데이트할 수 있습니다. 실제 연구용으로 사용할 때는 인증 및 팀별 접근 권한을 추가해야 합니다. 브라우저에는 Supabase 공개 키만 사용하며, 관리자 키를 넣지 않습니다.

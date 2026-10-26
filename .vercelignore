@@ -1,0 +1,9 @@
+*.hwpx
+*.hwp
+*.py
+*.sql
+*.md
+.git/
+.env
+.env.*
+node_modules/

@@ -1,0 +1,9 @@
+*.hwpx
+*.hwp
+.env
+.env.*
+.vercel/
+node_modules/
+__pycache__/
+
+.vercel
